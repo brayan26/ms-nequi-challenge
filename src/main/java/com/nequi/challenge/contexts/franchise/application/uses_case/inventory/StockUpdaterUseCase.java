@@ -13,6 +13,6 @@ public class StockUpdaterUseCase {
    }
 
    public void execute(Inventory inventory) {
-      return this.repository.updateStock(inventory);
+      this.repository.updateStock(inventory);
    }
 }
