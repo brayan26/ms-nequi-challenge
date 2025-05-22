@@ -1,3 +1,12 @@
+logging:
+  level:
+    org:
+      springframework:
+        web: ERROR
+        boot:
+          autoconfigure:
+            web: ERROR
+
 server:
   servlet:
     context-path: /api/v1
@@ -6,6 +15,14 @@ server:
 spring:
   application:
     name: ms-franchise-neg
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    generate-ddl: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: 1122q!
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 #Project info
 app:
