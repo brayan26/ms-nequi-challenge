@@ -1,0 +1,11 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: ms-franchise-neg
+
+#Project info
+app:
+  version: @project.version@
+  name: @project.name@
